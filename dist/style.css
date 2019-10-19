@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f0;
+  font-family: arial;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #004d00;
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.btn {
+  padding: 0 20px;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0.4px solid #003300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.flex {
+  display: flex;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0e0d1;
+  }
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+
+.logo {
+  width: 25vw;
+  
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  display: flex;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+      }
+  
+  nav li {
+    padding-bottom: 3px;
+  }
+}
+
+
+nav > ul {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+
+@media (max-width: 650px) {
+  nav > ul {
+        flex-direction: column;
+  }
+}
+
+#email-bentley {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  justify-content: center;
+}
+
+#email-bentley > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#email-bentley input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  background: #ffffff;
+}
+
+#email-bentley input[type="submit"] {
+  max-width: 200px;
+  width: 100%;
+  background: #d6d6c2;
+  margin: 15px auto;
+  border: 0;
+}
+
+#email-bentley input[type="submit"]:hover {
+  background: #004d00;
+  color: #ccffcc;
+}
+
+#email-bentley input[type="submit"]:active {
+  background: #004d00;
+  top: 2px;
+  left: -2px;
+}
+
+
+@media (max-width: 650px) {
+  #email-bentley {
+  margin-top: 200px;
+  }
+}
+
+
+#world-of-bentley {
+  margin-top: 30px;
+}
+
+
+#world-of-bentley .icon {
+  diplay: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #003300;
+  padding: 25px;
+  
+}
+
+@media (max-width: 550px) {
+  #world-of-bentley .icon {
+    display: none;
+  }
+}
+
+#world-of-bentley .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 150vw;
+  padding: 5px;
+  }
+
+
+@media (max-width: 550px) {
+  #world-of-bentley .desc {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  height: 150px;
+  }
+}
+
+@media (max-width: 550px) {
+  #world-of-bentley {
+  margin-top: 0;
+  }
+}
+
+#bentley-story {
+  display: flex;
+  justify-content: center;
+  margin: 50px 10px 50px 10px;
+}
+
+
+#bentley-story > iframe {
+  max-width: 700px;
+  width: 100%;
+}
+
+#models {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ 
+}
+
+.product {
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #004d00;
+  border-radius: 3px;
+  
+}
+
+.product > .cars {
+  background-color: #e0e0d1;
+  color: #003300;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+
+.product > p {
+  margin: 15px;
+  
+  }
+
+.product > button {
+  max-width: 200px;
+  width: 100%;
+  background: #d6d6c2;
+  border: 0;
+  margin: 15px 0;
+  
+}
+
+.product > button:hover {
+  background: #004d00;
+  color: #ccffcc;
+}
+
+.product > button: active {
+  background: #004d00;
+  top: 2px;
+  left: -2px;
+}
+
+
+footer {
+  background: #e0e0d1;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  color: #2e2e1f;
+  font-size: 0.9rem;
+}
